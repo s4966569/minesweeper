@@ -199,13 +199,22 @@ def main():
                 rows, cols, mines = 16, 30, 99
                 break
             elif difficulty == '4':
-                rows = int(input("输入行数: "))
-                cols = int(input("输入列数: "))
+                rows = int(input("输入行数(2-50): "))
+                cols = int(input("输入列数(2-50): "))
+                
+                # 检查棋盘尺寸限制
+                if rows < 2 or cols < 2:
+                    print("行数和列数必须大于等于2！请重新输入。")
+                    continue
+                elif rows > 50 or cols > 50:
+                    print("棋盘尺寸过大！最大支持50x50，请重新输入。")
+                    continue
+                
                 max_mines = rows * cols - 1
                 mines = int(input(f"输入地雷数量 (最多 {max_mines}): "))
                 
-                if rows < 1 or cols < 1 or mines < 1 or mines >= rows * cols:
-                    print("无效的设置！请重新输入。")
+                if mines < 1 or mines >= rows * cols:
+                    print("地雷数量无效！请重新输入。")
                     continue
                 break
             else:
