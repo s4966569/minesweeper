@@ -4,7 +4,7 @@
 
 ## 🎮 游戏演示
 
-https://github.com/s4966569/minesweeper/blob/master/%E5%BD%95%E5%B1%8F%20demo.mov
+![Demo预览](demo.gif)
 
 ## 功能特点
 
