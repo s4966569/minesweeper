@@ -2,6 +2,10 @@
 
 一个用Python编写的命令行扫雷游戏，具有完整的游戏功能和用户友好的界面。
 
+## 🎮 游戏演示
+
+https://github.com/s4966569/minesweeper/blob/master/%E5%BD%95%E5%B1%8F%20demo.mov
+
 ## 功能特点
 
 - ✅ 支持自定义棋盘大小和地雷数量
