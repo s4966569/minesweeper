@@ -87,25 +87,27 @@ class Minesweeper:
         """显示棋盘"""
         os.system('cls' if os.name == 'nt' else 'clear')  # 清屏
         
-        print("   ", end="")
+        # 显示列号
+        print("    ", end="")  # 为行号留出空间
         for col in range(self.cols):
-            print(f"{col:2}", end=" ")
+            print(f"{col:2d} ", end="")
         print()
         
+        # 显示棋盘内容
         for row in range(self.rows):
-            print(f"{row:2} ", end="")
+            print(f"{row:2d}  ", end="")  # 显示行号，右对齐并留出空间
             for col in range(self.cols):
                 if self.flagged[row][col] and not show_mines:
-                    print(" F", end=" ")
+                    print(" F ", end="")
                 elif self.revealed[row][col] or show_mines:
                     if self.board[row][col] == -1:
-                        print(" *", end=" ")
+                        print(" * ", end="")
                     elif self.board[row][col] == 0:
-                        print("  ", end=" ")
+                        print("   ", end="")
                     else:
-                        print(f" {self.board[row][col]}", end=" ")
+                        print(f" {self.board[row][col]} ", end="")
                 else:
-                    print(" ■", end=" ")
+                    print(" ■ ", end="")
             print()
         print()
     
