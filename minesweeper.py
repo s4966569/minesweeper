@@ -199,8 +199,8 @@ def main():
                 rows, cols, mines = 16, 30, 99
                 break
             elif difficulty == '4':
-                rows = int(input("输入行数(2-50): "))
-                cols = int(input("输入列数(2-50): "))
+                rows = int(input("输入棋盘行数(2-50): "))
+                cols = int(input("输入棋盘列数(2-50): "))
                 
                 # 检查棋盘尺寸限制
                 if rows < 2 or cols < 2:
