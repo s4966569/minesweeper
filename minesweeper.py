@@ -176,9 +176,9 @@ class Minesweeper:
         self.display_board(show_mines=True)
         
         if self.game_over:
-            print("💥 Game Over! 你踩到地雷了！")
+            print("Game Over!")
         elif self.won:
-            print("🎉 Congratulations! You Win! 恭喜你成功扫雷！")
+            print("Congratulations! You Win!")
 
 def main():
     """主函数"""
